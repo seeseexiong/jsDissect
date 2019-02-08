@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>See JS Dissect</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // use prompt, confirm, alert
+        // What's your name? Use prompt
+        var userName = prompt ("What is your name?")
+        // Greet user by their name.  Use alert
+        var greetUser = alert("Hi" + " " + userName)
+        // Ask if they are over 18? Use confirm
+        var confirmAge = confirm ("Are you 21 or older?")
+        // If they are older let them know they can buy alcohol. Use if statement with alert
+        if (confirmAge) {
+            alert("Do you know that if you are 21+ you can buy alcohol?");
+            alert("Isn't that cool?");
+            alert("Here's $40 for you to get some apple ale. :)")
+        }
+        
+        // How old are you? Use prompt
+        var userAge = prompt ("How old are you?")
+        alert ("Cool")
+        // Calculate how old they will be in 10 years.  Use alert
+        var next10Years = ("In the next 10 years you'll be " + (parseInt(userAge) + 10));
+        alert (next10Years);
+        console.log(userName);
+        console.log(userAge);
+        console.log(next10Years);
+        // How many dollars do you want to be able to save a day?
+        var dollarSafe = prompt ("How many dollars do you want to be able to safe a day? Enter a full number with no decimal:")
+        var safe1Year = ("If you safe " + dollarSafe + " a day, in one year you'll have " +
+            (parseInt(dollarSafe)*365) + " dollars.");
+        alert (safe1Year);
+    </script>
+</body>
+</html>
